@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Set up the body so that it takes up the entire page with no scroll option */
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: 'center';
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* For the panel container, change the display to flex so it spans out horizontally */
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+/* For each individual panel, center the photo and have it fill the div. Set the text to white, make the cursor visible when hovering, set the position to relative so you can make the titles absolute, and set up a transition. */
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: 0.7s ease-in;
+}
+
+/* Have the title be in the bottom, left corner about 20px out. */
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+/* When the panel is given the 'active' class, change the flex so that it's larger than the original 0.5 */
+.panel.active {
+    flex: 5
+}
+
+/* When the panel is given the 'active' class, make the title visible and transition it in */
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.5s ease-in 0.5s;
+}
+
+.explanation {
+    margin: 10px;
+}
+
+/* For smaller screen sizes, make the content full-screen and remove the 4th and 5th panels */
+@media (max-width: 480px) {
+    body {
+        height: 100vh;
+    }
+
+    .explanation {
+        font-size: small;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4), .panel:nth-of-type(5) {
+        display: none;
+    }
+}
