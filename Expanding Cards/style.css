@@ -16,6 +16,16 @@ body {
     margin: 0;
 }
 
+/* Set up navigation styling */
+.navigation {
+    height: 18vh;
+    text-align: center;
+}
+
+.explanation{
+    font-size: auto;
+}
+
 /* For the panel container, change the display to flex so it spans out horizontally */
 .container {
     display: flex;
@@ -27,7 +37,7 @@ body {
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 75vh;
     border-radius: 50px;
     color: white;
     cursor: pointer;
@@ -41,8 +51,8 @@ body {
 .panel h3 {
     font-size: 24px;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 25px;
+    left: 25px;
     margin: 0;
     opacity: 0;
 }
@@ -56,10 +66,6 @@ body {
 .panel.active h3 {
     opacity: 1;
     transition: opacity 0.5s ease-in 0.5s;
-}
-
-.explanation {
-    margin: 10px;
 }
 
 /* For smaller screen sizes, make the content full-screen and remove the 4th and 5th panels */
