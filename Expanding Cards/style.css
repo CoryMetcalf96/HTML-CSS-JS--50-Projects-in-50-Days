@@ -59,7 +59,7 @@ body {
 
 /* When the panel is given the 'active' class, change the flex so that it's larger than the original 0.5 */
 .panel.active {
-    flex: 5
+    flex: 4
 }
 
 /* When the panel is given the 'active' class, make the title visible and transition it in */
