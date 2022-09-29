@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
+/* Establish variables for the progress bar colors */
 :root {
     --line-border-fill: #3498db;
     --line-border-empty: #e0e0e0; 
@@ -21,10 +22,18 @@ body {
     margin: 0;
 }
 
+/* Set up navigation styling */
+.navigation {
+    height: 18vh;
+    text-align: center;
+}
+
+/* Center everthing */
 .container {
     text-align: center;
 }
 
+/* Evenly space the progress container, giving a designated with, max width, and makign the position relative. */
 .progress-container {
     display: flex;
     justify-content: space-between;
@@ -34,6 +43,7 @@ body {
     width: 350px;
 }
 
+/* Using the pseudo ::before to start this styling before the element itself- this requires the content attribute to show. Establish the 'empty line' color and position. */
 .progress-container::before {
     content: '';
     background-color: var(--line-border-empty);
@@ -46,6 +56,7 @@ body {
     z-index: -1;
 }
 
+/* Establish what the progress line should look like. */
 .progress {
     background-color: var(--line-border-fill);
     position: absolute;
@@ -58,6 +69,7 @@ body {
     transition: .4s ease;
 }
 
+/* Establish the empty circles styling for the div. */
 .circle {
     background-color: white;
     color: #999;
@@ -71,10 +83,12 @@ body {
     transition: .4 ease;
 }
 
+/* Change the border color when the circle has an active class as well. */
 .circle.active {
     border-color: var(--line-border-fill);
 }
 
+ /* Style the buttons based on their status. */
 .btn {
     background-color: var(--line-border-fill);
     color: white;
