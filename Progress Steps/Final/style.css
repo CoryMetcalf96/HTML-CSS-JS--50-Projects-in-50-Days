@@ -59,7 +59,7 @@ body {
     height: 4px;
     width: 0%;
     z-index: -1;
-    transition: .4 ease;
+    transition: .4s ease;
 }
 
 .circle {
@@ -72,7 +72,7 @@ body {
     align-items: center;
     justify-content: center;
     border: 3px solid var(--line-border-empty);
-    transition: .4 ease;
+    transition: .4s ease;
 }
 
 .circle.active {
