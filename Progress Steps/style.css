@@ -33,7 +33,7 @@ body {
     text-align: center;
 }
 
-/* Evenly space the progress container, giving a designated with, max width, and makign the position relative. */
+/* Evenly space the progress container, giving a designated with, max width, and making the position relative. */
 .progress-container {
     display: flex;
     justify-content: space-between;
