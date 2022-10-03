@@ -6,13 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Project Starter</title>
+    <title>Rotating Navigation</title>
 </head>
 <body>
-    <div class="navigation">
-        <h1>Project Starter</h1>
-        <p>Explanation: ...</p>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Rotating Navigation (Follow Along)</h1>
+            <small>Click the navigation hamburger icon to rotate the entire page, revealing a hidden navigation bar on the side. This is done primarily by using the transform CSS property and JS class reassignment through event listeners. <a style="color: deepskyblue;" href="./Final/index.html">Click here to go to see the version I did on my own.</a></small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptatibus officiis eius iste quod ullam commodi corporis magni facere at facilis! Quasi eligendi ut accusamus dolor vitae, soluta dignissimos, inventore atque expedita tempora cum voluptatem rerum iste harum tempore voluptatum, corporis culpa nulla! Corporis ipsum sint, quidem beatae ratione distinctio ipsa iste nisi asperiores labore suscipit doloribus maiores quos, amet reprehenderit explicabo error, perspiciatis et temporibus alias rem blanditiis esse. Ab, placeat veritatis? Consectetur repellendus eius inventore reprehenderit. A tenetur accusantium quibusdam, sequi soluta minus cupiditate illo quaerat. Distinctio adipisci vitae dolorum. Sequi, unde. Doloribus quo obcaecati tempore commodi veniam!
+            </p>
+
+            <h3>My Dog</h3>
+            <img src="https://images.unsplash.com/photo-1616781296073-65d3f087de41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80" alt="dog">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore facere architecto ea quas dolores magni. Id obcaecati doloremque necessitatibus autem recusandae perferendis maxime dolor voluptas temporibus iusto dignissimos accusantium minima a modi neque, dolore incidunt illum aliquid. Recusandae doloremque distinctio omnis suscipit iusto consequatur nisi aspernatur dolores! Et, neque deleniti? Libero quaerat laborum a soluta temporibus fugiat. Veniam blanditiis hic fugit sapiente, magni nesciunt necessitatibus quae quis excepturi nulla modi dolorem aliquid sunt id ducimus.</p>
+        </div>
     </div>
+
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-user-alt"></i> About</li>
+            <li><i class="fas fa-envelope"></i> Contact</li>
+        </ul>
+    </nav>
     <script src="script.js"></script>
 </body>
 </html>
