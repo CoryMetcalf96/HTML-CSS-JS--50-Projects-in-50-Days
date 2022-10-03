@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
+/* Create a linear gradient for the background. */
 body {
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,4 +15,60 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+}
+
+/* Create a pop-out box for the expanation / title navigation. */
+.navigation {
+    background-color: rgb(231, 231, 244);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 25px;
+    box-shadow: 10px 10px 10px #333;
+    max-width: 1000px;
+}
+
+/* Set the search div as relative and give it a set height of 50px. */
+.search {
+    position: relative;
+    height: 50px;
+}
+
+/* Within the search class, if anything has the input class as well, make the background white and remove the border. Set the font size, padding, dimensions, and a transition. */
+.search .input {
+    background-color: white;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+/* For the button, make the background white and remove the border. Have the cursor identify as pointer, set the font size, and have it be absolute in relation to the parent element. Have it 0 for top and left, then set up the dimensions and transition. */
+.btn {
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+/* Remove  the ourline when the button / input are focused on. */
+.btn:focus, .input:focus {
+    outline: none;
+}
+
+/* When the search class is accompanied by an active class, set the input width to expand. */
+.search.active .input {
+    width: 200px;
+}
+
+/* When the search class is accompanied by an active class, set the buton to move along the x axis in correspondance with the search input. */
+.search.active .btn {
+    transform: translateX(198px);
 }
