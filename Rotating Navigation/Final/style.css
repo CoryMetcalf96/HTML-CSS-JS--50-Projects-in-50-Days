@@ -19,7 +19,10 @@ body {
     min-height: 100vh;
     padding: 50px;
     transition: 0.5s linear;
-    margin-left: 50;
+}
+
+.container h1 {
+    text-align: center;
 }
 
 .container.show-nav {
@@ -69,7 +72,7 @@ body {
     font-size: 50px;
     left: 45%;
     top: 60%;
-    transform: rotate(90deg);
+    transform: rotate(110deg);
     transform-origin: top left;
 }
 
@@ -146,4 +149,10 @@ nav ul li + li + li + li + li{
 .content p {
     color: #333;
     line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+    .content h1 {
+        font-size: 20px;
+    }
 }
