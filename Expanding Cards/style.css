@@ -20,6 +20,7 @@ body {
 .navigation {
     height: 18vh;
     text-align: center;
+    margin: 35px 10px;
 }
 
 .explanation{
@@ -37,7 +38,7 @@ body {
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 68vh;
     border-radius: 50px;
     color: white;
     cursor: pointer;
@@ -59,7 +60,7 @@ body {
 
 /* When the panel is given the 'active' class, change the flex so that it's larger than the original 0.5 */
 .panel.active {
-    flex: 4
+    flex: 2
 }
 
 /* When the panel is given the 'active' class, make the title visible and transition it in */
