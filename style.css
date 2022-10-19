@@ -12,8 +12,12 @@ body {
 
 .navigation-bar {
     width: 100vw;
-    border-bottom: solid 1px deepskyblue;
-    box-shadow: 10px 10px 20px rgba(0, 191, 255, 0.484);
+    border-bottom: solid 1px rgba(0, 191, 255, 0.384);
+    box-shadow: 10px 10px 20px rgba(0, 191, 255, 0.2);
+}
+
+.navigation-bar h1 {
+    color: deepskyblue;
 }
 
 .navigation {
@@ -36,8 +40,8 @@ body {
     margin: 10px;
     padding: 10px 25px 15px 25px;
     border-radius: 15px;
-    border: solid 2px deepskyblue;
-    box-shadow: 5px 5px 10px rgba(0, 191, 255, 0.505);
+    border: solid 2px rgba(0, 191, 255, 0.444);
+    box-shadow: 5px 5px 10px rgba(0, 191, 255, 0.2);
 }
 
 .project-title {
