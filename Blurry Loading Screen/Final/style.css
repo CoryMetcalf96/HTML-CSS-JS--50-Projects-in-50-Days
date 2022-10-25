@@ -14,3 +14,31 @@ body {
     overflow: hidden;
     margin: 0;
 }
+
+.navigation-box {
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, .825);
+    width: 80vw;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0);
+}
+
+.bg {
+    background: url('https://images.unsplash.com/photo-1666044433630-a71a8aee54f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80') no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text {
+    padding: 200px;
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
