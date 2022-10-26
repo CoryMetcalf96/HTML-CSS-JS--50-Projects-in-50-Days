@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Body: Remove the scroll bar and height restrictions */
 body {
     background-color: #efedd6;
     font-family: 'Roboto', sans-serif;
@@ -15,10 +16,22 @@ body {
     overflow-x: hidden;
 }
 
+.navigation-box {
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, .825);
+    width: 80vw;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0);
+}
+
+/* h1: add margin of 10px*/
 h1 {
     margin: 10px;
 }
 
+/* box class: set a background and text color. Make sure the items are aligned and justified in the center using flex. Set the width and height of the boxes and add a margin, customizing it to your liking. Set the initial transformation to be 400% on the x-axis, throwing the boxes out of view. */
 .box {
     background-color: steelblue;
     color: #fff;
@@ -34,14 +47,17 @@ h1 {
     transition: transform 0.4s ease;
 }
 
+/* For every 'even' div with the box class, transform them along the x-axis -400% so it can come in from the other direction. */
 .box:nth-of-type(even) {
     transform: translateX(-400%);
 }
 
+/* When the box class includes a show class, set the transofmation along the x-axis to 0 */
 .box.show {
     transform: translateX(0%);
 }
 
+/* Customize the H2. */
 h2 {
     font-size: 25px;
 }
